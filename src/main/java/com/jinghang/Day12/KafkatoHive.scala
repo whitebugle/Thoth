@@ -25,7 +25,7 @@ object KafkatoHive {
       ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG -> "org.apache.kafka.common.serialization.StringDeserializer",
       ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG -> "org.apache.kafka.common.serialization.StringDeserializer"
     )
-    ss.sql("create table if not exists default.test (name String,num int,time bigint) row format delimited fields terminated by '\t'")
+    ss.sql("create table if not exists default.test (name String,num int,time Bigint) row format delimited fields terminated by '\t'")
 
 
     val topic=Array("first")

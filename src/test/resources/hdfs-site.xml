@@ -93,5 +93,10 @@
   		<name>dfs.client.failover.proxy.provider.mycluster</name>
 	<value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
 	</property>
+
+	<property>
+		<name>dfs.permissions</name>
+		<value>false</value>
+	</property>
 </configuration>
 
